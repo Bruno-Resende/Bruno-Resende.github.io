@@ -1,0 +1,101 @@
+/*Comando abaixo utiliazdo para aplicar uma configuração padrão em todas as vezes que a tag abaixo for inserida*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body{ 
+    height: 100%;
+    /*Comando serve para que o degrade da cor de fundo funcione corretamente em 100% da página*/
+}
+
+body{
+    font-family: 'Raleway', sans-serif; /*Fonte adicionada no body, pelo fato de ser uma fonte utilizada em todo o documento*/
+    color: white;
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(18,33,113,1) 50%);
+}
+
+.profile{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.foto-perfil{
+    width: 80px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px white;
+    border: 3px solid white;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.social{
+    display: flex; /* Faz com que os itens da lista fiquem um ao lado do outro*/
+    justify-content: space-around; /*Dá um espaçamento igual ao redor de cada item*/
+    /*justify-content: center; Serve quando se utiliza o display flex, e assim posiciona o conteúdo no centro*/
+    list-style: none; /* Remover bolinhas da lista*/
+    margin: 20px 0;
+}
+
+.social img{
+    width: 33px;
+}
+
+/* Comando que eu inseri antes de ver o vídeo:
+.links-list{
+    background-color: #FFFFFF;
+    margin: 15px;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #FFFFFF;
+    list-style: none;
+}
+
+
+h3{
+    color: rgb(54,77,204);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 13px;
+}
+*/
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li{
+    margin: 10px 20px;
+}
+.links-list li a {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px #FFFFFF;
+    text-decoration: none;
+    display: block; /* O display serve para separar o texto, para não ficar um em cima do outro */
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: rgb(54,77,204);
+    font-weight: bold;
+}
+
+.links-list li a span{
+    display: block;
+    margin-top: 10px;
+    color: grey;
+}
